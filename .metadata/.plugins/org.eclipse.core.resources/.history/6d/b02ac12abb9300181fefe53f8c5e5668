@@ -1,0 +1,51 @@
+<?php
+
+echo "<h4>성적 관리 프로그램</h4><hr>";
+
+echo "◈성적 입력◈<br><hr>";
+
+$conn = mysql_connect("localhost","강한나","0324");
+$dbconn = mysql_select_db("mirim",$conn);
+
+echo "<form name='form' method='post' action='CH06_03.php' >
+       <table border = 1><tr>
+        <td>이름 : <input type='text' name='name' size=8>&nbsp
+                      과목1 : <input type='text' name='one' size=5>&nbsp
+                      과목2 : <input type='text' name='two' size=5>&nbsp
+                      과목3 : <input type='text' name='three' size=5>&nbsp
+                      과목4 : <input type='text' name='four' size=5>&nbsp
+                      과목5 : <input type='text' name='five' size=5>&nbsp
+        </td>
+        <td><input type='submit' name='submit' value='입력하기'></td>
+        </table></form>";
+
+
+$sql = "select * from stud_score";
+$result = mysql_query($sql);
+
+$rows = mysql_num_rows($result); //검색된 데이터의 행 개수
+
+$cols = array("번호","이름","과목1","과목2","과목3","과목4","과목5",
+            "합계","평균","비고");
+
+echo "<table border = 0 cellpadding = 5><tr align = center>";
+
+
+foreach($cols as $col)
+    echo "<td bgcolor = #BCA9F5>$col</td>";  //열 이름 출력
+    
+    while($row = mysql_fetch_row($result)){
+            echo "<tr>";
+        
+        for($i = 0; $i < $rows; $i++)
+            echo "<td>$row[$i]</td>";
+            echo "</tr>";
+    }
+    
+    echo "</table>";
+    
+    mysql_close($conn);
+    
+
+
+?>

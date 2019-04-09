@@ -1,0 +1,32 @@
+<?php
+
+echo "<table border = '1'><tr><td>삼각형 * 출력1<br><hr/>";
+
+for($i = 0; $i < 10; $i++){ //*의 개수
+       for($j = 10 - $i; $j > 0; $j--){ //공백의 개수
+            echo "&nbsp";
+        }
+       for($k = 10 - $j; $k < 0;)
+        echo "*&nbsp";
+        echo "<br>";
+}
+
+echo "</td><td>삼각형 * 출력2<br><hr/>";
+for($i = 0; $i < 10; $i++){//줄바꿈
+    for($j = $i+1; $j > 0; $j--){//한줄에 쓰는 거
+        echo "*&nbsp";
+    }
+    echo "<br>";
+}
+echo "</tr><tr><td>삼각형 * 출력3<br><hr/>";
+
+
+echo "</td><td>삼각형 * 출력4<br><hr/>";
+for($i = 10; $i > 0; $i--){ //*의 개수
+    for($j = 10 - $i; $j < 10; $j++){ //공백의 개수
+        echo "*&nbsp";
+    }
+    echo "<br>";
+}
+echo "</td></tr>";
+?>

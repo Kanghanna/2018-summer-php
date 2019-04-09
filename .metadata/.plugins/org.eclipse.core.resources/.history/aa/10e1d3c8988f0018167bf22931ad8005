@@ -1,0 +1,10 @@
+<?php
+
+echo "10! Ãâ·Â - For¹®<br><br>";
+
+for($i = 1; $i <= 10; $i++){
+    echo "$i&nbspx&nbsp";
+}
+echo 
+
+?>

@@ -1,0 +1,23 @@
+<?php
+
+echo "점수에 따른 학점 판별<hr/>";
+$score = 99;
+$class;
+
+if($score >= 90)
+    $class = "A";
+else if($score >= 80)
+    $class = "B";
+else if($score >= 70)
+    $class = "C";
+else if($score >= 60)
+    $class = "D";
+else if($score >= 0)
+    $class = "F";
+
+    if($score % 10 >= 5){
+    $class += "+";
+    echo "학점 : $class";
+    }
+
+?>

@@ -1,0 +1,16 @@
+<?php
+//select
+echo "<h4>데이터베이스의 내용 출력</h4><hr>";
+
+$mydb = mysql_connect("localhost","강한나","0324");
+
+$row = mysql_num_rows($result);
+echo " total_record = $row";
+
+echo "<table>
+      <tr><td>ID</td><td>TITLE</td><td>CONTENT</td><td>명령</td></tr>";
+
+echo "<tr><td>".$_POST[num]."</td><td>".$_POST[content]."</td>
+      <td><a href = 'CH06_board_delete.php'>[삭제]</a></td>";
+
+?>

@@ -1,0 +1,16 @@
+<style>
+table { text-align : center; }
+</style>
+<?php
+$dan = 3;
+echo "{$dan}단 구구단 표 만들기<hr/>";
+echo "<table border = '1'; width = '100';>"
+
+$i = 1;
+while($i <= 9){
+    
+    $tt = $dan * $i;
+echo "<tr><td>$dan x $i = $tt</td></tr>";
+    $i++;
+}
+?>

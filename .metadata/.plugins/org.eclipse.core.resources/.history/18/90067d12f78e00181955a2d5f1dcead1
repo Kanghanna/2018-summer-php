@@ -1,0 +1,11 @@
+<?php
+
+echo "점수에 따른 학점 판별<hr/>";
+$score = 99;
+$class;
+
+if($score >= 95)
+    
+    
+
+?>

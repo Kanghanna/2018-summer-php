@@ -1,0 +1,17 @@
+<?php
+
+echo "101~300 4의 배수 - while문<hr/><br>";
+
+$i = 101;
+$count = 0;
+while($i < 300){
+    echo "$i";
+      $count++;
+      if($count == 10){
+        echo "<br>";
+        $count = 0;
+      }
+
+}
+
+?>

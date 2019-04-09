@@ -1,0 +1,13 @@
+<?php
+
+echo "<h4>10~200 야드를 미터로 변환하여 출력</h4><br><hr/>";
+
+echo "<table border = '1'>
+    <tr bgcolor = #F5A9F2><td>야드</td><td>미터</td></tr>";
+    
+    for($yard = 10; $yard <= 200; $yard+10){
+        $meter = $yard*0.9144;
+        echo "<tr><td>$yard</td><td>$meter</td></tr>";
+    }
+
+?>

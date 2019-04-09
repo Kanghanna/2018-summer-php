@@ -1,0 +1,11 @@
+<?php
+
+echo "<table border = '1'>
+<tr><td>삼각형 * 출력1<br><hr/>";
+
+for($i = 9 $i > 0; $i--){
+    for($j = 0; )
+    echo "*"
+}
+
+?>

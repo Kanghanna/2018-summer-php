@@ -1,0 +1,22 @@
+<?php
+
+echo "50~500 짝수의 합 출력 - do~while 사용<hr/><br>";
+
+$i = 50;
+
+do{
+    if($i % 2 == 0){
+        echo "$i&nbsp&nbsp&nbsp";
+        $sum += $i;
+        $count++;
+    }
+    
+    if($count == 10)
+        echo "<br>";
+    
+    $i++;
+    
+}while($i <= 500);
+
+    echo "<hr/>50~500 짝수 합계 : $sum";
+?>

@@ -1,0 +1,16 @@
+<?php
+
+echo "<h3>미니게시판</h3><hr>";
+echo "<form method = 'post' action = 'CH08_02.php'>
+      <table>
+      <tr><td colspan = '2'>글 목록 확인</td></tr>
+      <tr><td>제목&nbsp</td>
+      <td><input type ='text' name='title' size = 100></td></tr>
+      <tr><td valign = 'top'>내용&nbsp</td>
+      <td><textarea name='content' rows='10' cols='100'>내용 입력</textarea></td></tr>
+      <tr><td align = 'center' colspan = '2'><input type='submit' value='글 올리기'>
+      <input type='reset' value = '취소'></td></tr>
+      </table>";
+      
+
+?>

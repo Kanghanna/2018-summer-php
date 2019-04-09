@@ -1,0 +1,27 @@
+<?php
+
+echo "<table border = '1'>
+<tr><td>삼각형 * 출력1<br><hr/>";
+
+for($i = 10; $i > 0; $i--){ //*의 개수
+    echo "&nbsp";
+    $count++;
+       for($j = 10 - $i; $j <= 10; $j++){ //공백의 개수
+            echo "*";
+            $count++;
+        }
+    
+        if($count == 10){
+        echo "<br>";
+        $count = 0;
+        }
+}
+
+echo "</td><td>삼각형 * 출력2<br></hr>";
+for($i = 0; $i < 10; $i++){
+    for($j = 0; $j < 10; $j++){
+        echo "*":
+    }
+}
+
+?>

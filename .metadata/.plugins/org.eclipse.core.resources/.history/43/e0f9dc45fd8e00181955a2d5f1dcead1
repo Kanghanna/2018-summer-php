@@ -1,0 +1,10 @@
+<?php
+
+echo "3단 구구단 표 만들기<hr/>";
+
+while($i > 10)
+echo "
+<table border = '1'>
+<tr><td>3
+</table> "
+?>

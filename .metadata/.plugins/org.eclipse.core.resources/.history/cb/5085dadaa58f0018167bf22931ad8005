@@ -1,0 +1,12 @@
+<?php
+
+echo "<h4>10~200 야드를 미터로 변환하여 출력</h4><br><hr/>";
+
+echo "<table border = '1'>
+    <tr><td>야드</td><td>미터</td></tr>"
+    <tr><td>
+    for($i = 10; $i <= 200; $i+10){
+        
+    }
+
+?>

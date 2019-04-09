@@ -1,0 +1,13 @@
+<?php
+
+echo "구구단 표 만들기<hr/>";
+echo "<table border = '1'; width = '100';>";
+
+for($i = 2; $i < 10; $i++){
+    for($j = 1; $j < 10; $j++){
+    $tt = $dan * $i;
+    echo "<tr><td align = center>$dan x $i = $tt</td></tr>";
+    }
+}
+echo "</table>";
+?>

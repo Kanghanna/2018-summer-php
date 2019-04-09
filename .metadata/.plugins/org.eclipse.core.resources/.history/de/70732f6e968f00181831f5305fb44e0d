@@ -1,0 +1,12 @@
+<?php
+
+$i = 101;
+$count = 0;
+while($i < 300){
+    echo "$i";
+      $count++;
+    if($count == 10)
+        echo "<br>";
+}
+
+?>
